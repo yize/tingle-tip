@@ -1,13 +1,11 @@
 # tingle-tip [![npm version](https://badge.fury.io/js/tingle-tip.svg)](http://badge.fury.io/js/tingle-tip)
 
+Tip提示
 
-## TL;DR
-
-效果图:
-
-![效果图](https://gtms04.alicdn.com/tps/i4/TB1nYteIVXXXXcgaXXXq0HQVVXX-309-422.png_200x200.jpg)
+<img src="https://img.alicdn.com/tps/TB1JxrZJpXXXXciXFXXXXXXXXXX-750-1254.png" width="375"/>
 
 ## Simple Usage
+
 ```javascript
 Tip.show({
     icon: 'success', // 'error', 'fail'
@@ -32,6 +30,7 @@ Tip.show({
 |text|required|-|提示文本(文本应尽量简短)|
 |icon| optional |-|tip显示的icon，可选值为：success、error和fail|
 |duration| optional |3000|tip显示的时间(单位是毫秒)|
+|width| optional |136px|tip 的总宽度|
 |onHide|optional|-|tip隐藏时的回调|
 
 ## API接口

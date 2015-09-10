@@ -56,9 +56,9 @@ class Tip extends React.Component {
             </div> : '';
 
         clearTimeout(t.timer);
-        t.timer = show && setTimeout(() => t.hide(), duration || 3000);
+        t.timer = show && setTimeout(function(){t.hide();},duration || 3000);
 
-        return <Layer show={show} {...other}> 
+        return <Layer show={show} {...other}>
             <div ref="root" className={classnames('tTip', {
                 [t.props.className]: !!t.props.className
             })}>
@@ -74,7 +74,9 @@ Tip.defaultProps = {
     show: false,
     mask: true,
     text: '',
-    icon: ''
+    icon: '',
+    width: 136,
+    duration: 3000
 }
 
 // http://facebook.github.io/react/docs/reusable-components.html
@@ -92,7 +94,7 @@ let WRAPPER_ID = '__TingleGlobalTip__';
 let doc = document;
 
 Tip.global = null;
-Tip.show = (options) => {
+Tip.show = function (options){
     // 只有首次全局调用时，才会创建全局实例
     if (!Tip.global) {
         let wrapper = doc.getElementById(WRAPPER_ID);
@@ -106,7 +108,7 @@ Tip.show = (options) => {
     Tip.global.show(options);
 }
 
-Tip.hide = () => {
+Tip.hide = function()  {
     Tip.global && Tip.global.hide();
 }
 
