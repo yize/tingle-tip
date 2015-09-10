@@ -1,0 +1,27 @@
+/**
+ * Tip Component Style for tingle
+ * @author minjie
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
+.tTip {
+  background: rgba(50,54,66,0.9);
+  min-width: 136px;
+  padding: 0.533333333333333rem 0;
+  border-radius: 0.133333333333333rem;
+}
+.tTipIcon {
+  padding-bottom: 0.533333333333333rem;
+}
+.tTipIcon .tIcon {
+  width: 1rem;
+  height: 1rem;
+  fill: #fff;
+}
+.tTipContent {
+  font-size: 0.373333333333333rem;
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=Tip.css.map */
