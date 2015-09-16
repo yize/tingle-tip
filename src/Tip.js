@@ -51,7 +51,7 @@ class Tip extends React.Component {
         let t = this;
         let {icon, text, show, duration, ...other} = t.state;
 
-        icon = icon ? <div className="tTipIcon tFAC tPR">
+        icon = icon ? <div key={"tingle-tip-" + icon} className="tTipIcon tFAC tPR">
                 <Icon id={"tingle-tip-" + icon} />
             </div> : '';
 
