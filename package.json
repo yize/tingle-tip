@@ -1,7 +1,7 @@
 {
   "name": "tingle-tip",
   "version": "0.2.0",
-  "description": "提示浮层",
+  "description": "提示浮层，主要用于短暂的提示。",
   "repository": "https://github.com/tinglejs/tingle-tip.git",
   "author": {
     "name": "minjie",
